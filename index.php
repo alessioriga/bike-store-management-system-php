@@ -13,9 +13,30 @@ title_bar("VeloWorld");
             Browse our collection and find your next adventure on two wheels.</p>
     </section>
 
-
-
-
+    <!-- Featured Bikes Section -->
+    <section aria-label="Featured Bikes">
+        <h2>Featured Bikes</h2>
+        <ul class="featured-bikes">
+            <li>
+                <img src="images/items/stock/mountain_bike_1.jpg" alt="Mountain Bike">
+                <h3>Mountain Bike</h3>
+                <p>Perfect for off-road trails and adventure rides.</p>
+            </li>
+            <li>
+                <img src="images/items/stock/road_bike_1.jpg" alt="Road Bike">
+                <h3>Road Bike</h3>
+                <p>Lightweight and fast for long road rides.</p>
+            </li>
+            <li>
+                <img src="images/items/stock/city_bike_1.jpg" alt="City Bike">
+                <h3>City Bike</h3>
+                <p>Comfortable and stylish for everyday city commuting.</p>
+                <a href="items_in_stock.php" class="btn">See bikes in Stock</a>
+            </li> 
+        </ul>
+        
+    </section>
+    
     <!-- About teaser -->
     <section aria-label="About VeloWorld" class="about-home">
         <h2>Why Choose VeloWorld?</h2>
