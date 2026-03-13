@@ -1,0 +1,141 @@
+/* NAV MAIN WRAPPER */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.02em 2em 0.02em 0em;
+    border-radius: 10px;
+}
+
+/* LOGO */
+.nav-logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0.6em 1.4em;
+    font-weight: bold;
+    transition: color 0.3s;
+    
+}
+
+.nav-links a.current,
+.nav-links a:hover {
+    color: #1c882e;
+}
+
+.member-icon {
+    width: 32px;          
+    height: 32px;         
+    object-fit: contain;   
+    vertical-align: middle;
+}
+
+/* ICON GROUP */
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.member-btn {
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1025px) {
+
+    .main-nav {
+        flex-wrap: wrap;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-logo {
+        order: 1;
+    }
+
+ 
+    .nav-icon {
+        order: 2;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-left: auto;   
+    }
+
+
+    .menu-toggle {
+        order: 3;
+        display: block;
+        margin-left: 0.5em;
+        color: #000000;
+    }
+
+
+    .nav-links {
+        order: 4;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5em;
+        gap: 0.5em;
+
+    }
+
+    .nav-links.open {
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-links a {
+        display: inline-block;       
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        text-decoration: none;
+        padding: 0.6em 1.4em;
+        font-weight: bold;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .nav-links a.current,
+    .nav-links a:hover {
+        color: #1c882e;
+        
+    }
+}
+
