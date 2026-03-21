@@ -43,9 +43,27 @@ h1 {
     text-align: center;
 }
 
+.h2_title {
+    color: #06425C;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
 
 h2 {
 	text-align: center;
+    font-weight: normal;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    
+}
+
+h3, h4, h5, h6 {
+	text-align: center;
+    font-weight: normal;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
 }
 
 p {
@@ -229,7 +247,8 @@ main .btn {
 
 .star-rating {
     font-size: 1.2em;
-    color: #FFD700;
+    color: #06425C;
+;
 }
 
 .review-box p, .review-box details, .review-box meter {
@@ -271,6 +290,31 @@ main .btn {
 
 .filter-panel input[type="submit"] {
     margin-top: 0.5em;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 0.1px 20px 0.1px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 
