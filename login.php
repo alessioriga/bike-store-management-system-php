@@ -6,9 +6,9 @@ require_once 'utilities/pdo.php';
 $error = "";
 
 // If form was submitted
-if (isset($_POST['username']) && isset($_POST['password'])) {
+if (isset($_POST['email']) && isset($_POST['password'])) {
 
-    $typed_email = $_POST['username'];
+    $typed_email = $_POST['email'];
     $typed_password = $_POST['password'];
 
     // Prepared statement (safe)
@@ -33,7 +33,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     //     exit;
     // } else {
     //     // Failed login
-    //     $error = "Invalid username or password!";
+    //     $error = "Invalid email or password!";
     // }
 
     if ($user && password_verify($typed_password, $user['password'])) {
@@ -41,7 +41,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         header('Location: member.php');
         exit;
     } else {
-        $error = "Invalid username or password!";
+        $error = "Invalid email or password!";
     }
 }
 
@@ -54,8 +54,8 @@ title_bar("VeloWorld | Member Page");
     <form method="post" class="forms">
         <fieldset>
             <legend>Login</legend>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Enter the password">
