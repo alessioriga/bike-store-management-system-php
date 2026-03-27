@@ -32,7 +32,6 @@
     padding: 0.6em 1.4em;
     font-weight: bold;
     transition: color 0.3s;
-    
 }
 
 .nav-links a.current,
@@ -138,4 +137,3 @@
         
     }
 }
-
