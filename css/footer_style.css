@@ -30,7 +30,6 @@
     color: #1c882e;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .website-footer {
         flex-direction: column;   
