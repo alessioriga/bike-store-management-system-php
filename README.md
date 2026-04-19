@@ -52,6 +52,7 @@ bike-store-management-system-php/
 ├── edit_items.php           # Edit existing store items
 ├── insert_item.php          # Insert new items into inventory
 ├── contact_submit.php       # Handle contact form submissions
+├── veloworld_db.sql         # SQL file to set up the 'veloworld' database
 └── README.md                # Project documentation
 ```
 
